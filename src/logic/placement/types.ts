@@ -6,3 +6,8 @@ export interface ShipPlacement {
     };
     direction: "Horizontal" | "Vertical";
 }
+
+export interface AllPlacement {
+    player1: Array<ShipPlacement>;
+    player2: Array<ShipPlacement>;
+}

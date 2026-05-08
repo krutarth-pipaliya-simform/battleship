@@ -7,7 +7,6 @@ export function clickEvent() {
         if (!(ele instanceof HTMLDivElement)) return;
         switch (ele.classList[0]) {
             case "cell":
-                console.log("reached");
                 cellClick(ele);
                 break;
 
