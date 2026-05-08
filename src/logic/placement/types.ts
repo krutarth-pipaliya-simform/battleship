@@ -1,8 +1,8 @@
 export interface ShipPlacement {
-    size: 2 | 3;
+    size: number;
     start: {
-        row: 1 | 2 | 3 | 4 | 5 | 6;
-        column: 1 | 2 | 3 | 4 | 5 | 6;
+        row: number;
+        column: number;
     };
     direction: "Horizontal" | "Vertical";
 }
