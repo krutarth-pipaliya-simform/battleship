@@ -7,11 +7,13 @@
 body {
     height: 100vh;
 }
+
 .app {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
+
 header {
     padding: 1rem;
     background-color: white;
@@ -20,6 +22,31 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+.turn {
+    padding: 0.5rem 1rem;
+    border: 2px solid blue;
+    border-radius: 0.2rem;
+}
+
+.timer {
+    padding: 0.5rem 1rem;
+    border: 2px solid blue;
+    border-radius: 0.2rem;
+}
+
+.restart {
+    background-color: blue;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+
+    &:hover {
+        background-color: black;
+    }
+}
+
 main {
     flex: 1;
     display: flex;
@@ -33,6 +60,7 @@ h2 {
     justify-content: center;
     padding: 1rem;
 }
+
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(6, 4rem);
@@ -42,10 +70,11 @@ h2 {
     height: 4rem;
     width: 4rem;
     border: 2px solid black;
-}
 
-.turn {
-    background-color: aqua;
+    &:hover{
+        opacity: 0.5;
+        border-color: blue;
+    }
 }
 
 .correct-select {

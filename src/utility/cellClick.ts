@@ -16,6 +16,7 @@ export function cellClick(ele: HTMLDivElement) {
     }
     if (set?.has(position)) return;
     if (PlayerTurn === opponent) {
+        console.log(PlayerTurn, opponent);
         alert(`It's Player-${opponent}'s turn`);
         return;
     }
@@ -50,7 +51,7 @@ export function cellClick(ele: HTMLDivElement) {
                 }
                 const timer = document.querySelector(".timer");
                 if (timer) {
-                    timer.textContent = "30";
+                    timer.textContent = "10";
                 }
                 break;
             }
@@ -58,9 +59,10 @@ export function cellClick(ele: HTMLDivElement) {
     }
     if (found === false) {
         ele.classList.add("wrong-select");
+        if (ele.classList[1]) set.add(ele.classList[1]);
         const timer = document.querySelector(".timer");
         if (timer) {
-            timer.textContent = "30";
+            timer.textContent = "10";
         }
         changeTurn();
     }

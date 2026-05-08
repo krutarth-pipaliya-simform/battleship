@@ -10,7 +10,7 @@ export function timerEvent(sec: number) {
         if (timer) remaining = +timer.textContent;
         if (remaining === 0 && timer) {
             changeTurn();
-            timer.textContent = "30";
+            timer.textContent = "10";
         } else if (timer) {
             timer.textContent = String(remaining - 1);
         }

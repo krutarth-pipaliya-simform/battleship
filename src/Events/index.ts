@@ -3,5 +3,5 @@ import { timerEvent } from "./timerEvent.js";
 
 export function startEvents() {
     clickEvent();
-    timerEvent(30);
+    timerEvent(10);
 }
