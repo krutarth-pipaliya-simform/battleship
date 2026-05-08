@@ -36,7 +36,7 @@ h2 {
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(6, 4rem);
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .cell {
