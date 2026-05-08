@@ -16,7 +16,3 @@ export function timerEvent(sec: number) {
         }
     }, 1000);
 }
-
-export function resetTimer() {
-    timerEvent;
-}

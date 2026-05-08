@@ -54,6 +54,10 @@ export function cellClick(ele: HTMLDivElement) {
     }
     if (found === false) {
         ele.classList.add("wrong-select");
+        const timer = document.querySelector(".timer");
+        if (timer) {
+            timer.textContent = "30";
+        }
+        changeTurn();
     }
-    changeTurn();
 }
