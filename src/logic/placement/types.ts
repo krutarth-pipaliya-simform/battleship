@@ -8,6 +8,5 @@ export interface ShipPlacement {
 }
 
 export interface AllPlacement {
-    player1: Array<ShipPlacement>;
-    player2: Array<ShipPlacement>;
+    [K: `player${number}`]: Array<ShipPlacement>;
 }

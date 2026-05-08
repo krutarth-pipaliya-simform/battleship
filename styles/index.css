@@ -36,7 +36,6 @@ h2 {
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(6, 4rem);
-    /* background-color: blue; */
 }
 
 .cell {
@@ -47,4 +46,12 @@ h2 {
 
 .turn {
     background-color: aqua;
+}
+
+.correct-select {
+    background-color: green;
+}
+
+.wrong-select {
+    background-color: red;
 }

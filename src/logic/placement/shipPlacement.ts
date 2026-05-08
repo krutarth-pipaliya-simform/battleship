@@ -21,7 +21,7 @@ export const shipPlacement: AllPlacement = {
         {
             size: 3,
             start: {
-                row: 1,
+                row: 3,
                 column: 1,
             },
             direction: "Vertical",
@@ -47,10 +47,12 @@ export const shipPlacement: AllPlacement = {
         {
             size: 3,
             start: {
-                row: 1,
+                row: 4,
                 column: 1,
             },
             direction: "Vertical",
         },
     ],
 };
+
+export const selected = [new Set<string>(), new Set<string>()];
