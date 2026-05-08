@@ -43,6 +43,9 @@ export function cellClick(ele: HTMLDivElement) {
                 set.add(converted);
                 ele.classList.add("correct-select");
                 found = true;
+                if (set.size === 7) {
+                    alert(`player ${opponent === 1 ? 2 : 1} Won`);
+                }
                 break;
             }
         }
