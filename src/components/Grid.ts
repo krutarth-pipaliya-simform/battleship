@@ -1,4 +1,4 @@
-export function Grid() {
+export function Grid(player: number) {
     const grid = document.createElement("div");
     grid.classList.add("grid-wrapper");
     for (let i = 0; i < 36; i++) {
@@ -6,6 +6,8 @@ export function Grid() {
         cell.classList.add("cell");
         cell.setAttribute("row", String(Math.floor(i / 6) + 1));
         cell.setAttribute("column", String((i % 6) + 1));
+        cell.setAttribute("column", String((i % 6) + 1));
+        cell.setAttribute("player", String(player));
         grid.appendChild(cell);
     }
     return grid;

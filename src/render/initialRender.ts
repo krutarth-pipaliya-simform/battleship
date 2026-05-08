@@ -11,9 +11,9 @@ export function initialRender() {
     app?.appendChild(header);
 
     const main = Main();
-    const player1 = PlayerDiv("Player-1");
+    const player1 = PlayerDiv(1);
 
-    const player2 = PlayerDiv("Player-2");
+    const player2 = PlayerDiv(2);
     main.appendChild(player1);
     main.appendChild(player2);
     app?.appendChild(main);
