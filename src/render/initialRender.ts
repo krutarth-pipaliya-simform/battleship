@@ -1,6 +1,7 @@
 import { Header } from "../components/header.js";
 import { Main } from "../components/Main.js";
 import { PlayerDiv } from "../components/PlayerDiv.js";
+import { Timer } from "../components/Timer.js";
 import { Turn } from "../components/Turn.js";
 
 export function initialRender() {
@@ -8,6 +9,7 @@ export function initialRender() {
 
     const header = Header();
     header.appendChild(Turn());
+    header.appendChild(Timer());
     app?.appendChild(header);
 
     const main = Main();
