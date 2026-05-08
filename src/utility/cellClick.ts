@@ -48,6 +48,10 @@ export function cellClick(ele: HTMLDivElement) {
                         alert(`player ${opponent === 1 ? 2 : 1} Won`),
                     );
                 }
+                const timer = document.querySelector(".timer");
+                if (timer) {
+                    timer.textContent = "30";
+                }
                 break;
             }
         }
